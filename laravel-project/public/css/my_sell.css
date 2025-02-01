@@ -1,0 +1,148 @@
+.error {
+    color: red;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.success {
+    color: green;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.profile {
+    display: flex;
+    align-items: center;
+    padding: 24px;
+    gap: 16px;
+    margin: 0 100px;
+}
+
+.profile-image-placeholder {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+}
+
+.profile-name {
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 50px;
+
+}
+
+.edit-profile {
+    padding: 8px 16px;
+    border: 1px solid #ff4d6a;
+    border-radius: 4px;
+    background: none;
+    color: #ff4d6a;
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 8px;
+    margin-right: 80px;
+}
+
+.nav-links {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-link {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.sub-nav {
+    display: flex;
+    border-bottom: 1px solid #ddd;
+    padding: 0 20px;
+}
+
+.sub-nav-link {
+    padding: 15px 20px;
+    text-decoration: none;
+    color: #ff4444;
+    border-bottom: 2px solid #ff4444;
+    font-size: 14px;
+}
+
+.sub-nav-link.active {
+    color: black;
+    border-bottom: none;
+}
+
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 40px;
+    padding: 20px;
+}
+
+.product-card {
+    text-decoration: none;
+    color: inherit;
+    font-display: inline-block;
+    position: relative;
+}
+
+.product-image {
+    aspect-ratio: 1;
+    width: 100%;
+    display: flex;
+    border-radius: 6px;
+    align-items: center;
+    justify-content: center;
+}
+
+.product-name {
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.sold-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: red;
+    font-weight: bold;
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media screen and (max-width: 768px) {
+    .header {
+        padding: 15px 10px;
+    }
+
+    .search-bar {
+        margin: 0 10px;
+    }
+
+    .profile {
+        margin: 0 20px;
+    }
+
+    .profile-name {
+        margin-left: 10px;
+    }
+
+    .product-grid {
+        padding: 10px;
+    }
+
+    .product-name {
+        margin-bottom: 20px;
+    }
+}
