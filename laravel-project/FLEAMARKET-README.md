@@ -55,7 +55,12 @@ php artisan key:generate
 php artisan migrate:fresh --seed
 ```
 
-7. テスト用マイグレーションの実行
+7. .env.testingのkey:generateの実行
+```
+php artisan key:generate --env=testing
+```
+
+8. テスト用マイグレーションの実行
 
 ```
 php artisan migrate --env=testing
