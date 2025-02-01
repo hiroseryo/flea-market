@@ -59,6 +59,7 @@ php artisan migrate:fresh --seed
 ```
 php artisan key:generate --env=testing
 ```
+もしくは.envからコピーしてAPP_KEYにペーストしてください
 
 8. テスト用マイグレーションの実行
 
